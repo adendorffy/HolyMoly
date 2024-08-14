@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import PredictButton from "./components/PredictButton";
 import HomeButton from "./components/HomeButton";
 
-const PlaceholderImage = require("./assets/images/background-image.jpeg");
+const PlaceholderImage = require("./assets/icon-2.png");
 
 export default function App() {
   const [showAppOptions, setShowAppOptions] = useState(false);
