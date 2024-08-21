@@ -1,16 +1,16 @@
-// Modal.js
 import React from "react";
 import "../Modal.css";
 
-const Modal = ({ isOpen, onClose, number }) => {
+const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h2>Your Random Number</h2>
-        <p>{number}</p>
-        <button onClick={onClose}>Close</button>
+        <button className="close-button" onClick={onClose}>
+          ✕
+        </button>
+        <div className="modal-body">{children}</div>
       </div>
     </div>
   );

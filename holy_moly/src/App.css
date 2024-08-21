@@ -53,3 +53,56 @@ p {
   font-weight: bold;
   color: #333;
 }
+
+.photo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Add some space between the elements */
+}
+
+img {
+  border-radius: 10px;
+  max-width: 300px; /* Limit width */
+  max-height: 300px; /* Limit height */
+  height: auto;
+  width: auto;
+}
+
+.remove-photo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10%;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.remove-photo:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.predict-button {
+  background-color: #5c67f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.predict-button:hover {
+  background-color: #4a52d4;
+}
