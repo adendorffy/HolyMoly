@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 const PhotoUpload = ({ onPhotoUploaded }) => {
   const [photo, setPhoto] = useState(null);
@@ -13,8 +14,16 @@ const PhotoUpload = ({ onPhotoUploaded }) => {
 
   return (
     <div>
-      <input type="file" accept="image/*" onChange={handlePhotoUpload} />
-      {photo && <img src={photo} alt="Uploaded" style={{ width: "200px" }} />}
+      <label htmlFor="file-upload" className="custom-file-upload">
+        Upload or Take a Photo
+      </label>
+      <input
+        id="file-upload"
+        type="file"
+        accept="image/*"
+        onChange={handlePhotoUpload}
+      />
+      {photo && <img src={photo} alt="Uploaded" />}
     </div>
   );
 };

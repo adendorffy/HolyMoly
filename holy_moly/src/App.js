@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PhotoUpload from "./components/PhotoUpload";
 import PredictBags from "./components/PredictBags";
+import "./App.css";
 
 function App() {
   const [photo, setPhoto] = useState(null);
