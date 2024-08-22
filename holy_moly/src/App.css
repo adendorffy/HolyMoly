@@ -1,10 +1,12 @@
 /* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #d7faf7;
-  color: #4a7471;
+  font-family: "Poppins", sans-serif;
+  background-color: #e7e1d3;
+  color: #51443f;
 }
 
 .App {
@@ -16,10 +18,18 @@ body {
   text-align: center;
 }
 
+.app-title {
+  font-family: "Baloo 2";
+  font-weight: 900;
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #63b389; /* Example color (bruin) */
+  text-align: center;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #4a7471;
+  color: #63b389;
 }
 
 input[type="file"] {
@@ -28,7 +38,7 @@ input[type="file"] {
 
 label {
   display: inline-block;
-  background-color: #4a7471;
+  background-color: #63b389;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -38,7 +48,7 @@ label {
 }
 
 label:hover {
-  background-color: #4a7471;
+  background-color: #51443f;
 }
 
 img {
@@ -49,9 +59,10 @@ img {
 }
 
 p {
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #4a7471;
+  color: #51443f;
 }
 
 .photo-container {
@@ -74,7 +85,7 @@ img {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #51443f;
   color: white;
   border: none;
   border-radius: 10%;
@@ -88,11 +99,12 @@ img {
 }
 
 .remove-photo:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #302825;
 }
 
 .predict-button {
-  background-color: #4a7471;
+  font-family: "Poppins", sans-serif;
+  background-color: #63b389;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -104,5 +116,18 @@ img {
 }
 
 .predict-button:hover {
-  background-color: #293f3d;
+  background-color: #51443f;
+}
+
+.orange-text {
+  font-weight: 900;
+  color: #f9ba4d;
+}
+
+.brown-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: medium;
+  color: #302825;
 }
